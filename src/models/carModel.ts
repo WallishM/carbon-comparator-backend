@@ -1,11 +1,13 @@
 import {transportItfc} from './transportModel_Itfc';
 import { TransportData, Address } from './transportModel_Type';
+import * as dotenv from 'dotenv';
 const fetch = require ('node-fetch');
+
+dotenv.config();
 
 export class Car implements transportItfc{
 
-    private  dataFile = process.env.dataCarbonFile || '../public/dataCarbonPrint.json';
-    private keyAPI = process.env.keyAPIGeoapify || 'f40dfb65200d4c4796217eead18e9184';
+    private keyAPI = process.env.KEY_API_GEOAPIFY;
 
     private transportData :TransportData = {
         start:{
