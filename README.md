@@ -12,6 +12,6 @@ backend
   - framework : express
 
 
-The backend is in an other repo. 
+The frontend is in an other repo. 
 
 Feel free to contact me to give a constructive feedback. I will stop to learn when I will be dead :)
